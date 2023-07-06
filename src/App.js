@@ -1,7 +1,10 @@
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import WelcomePageComponent from "./Components/WelcomePageComponent";
-import CalculatorComponent from "./Components/CalculatorComponent";
+import CalculatorComponent from "./Components/CalculatorComponent.jsx";
+import ButtonBox from "./Components/ButtonBox.jsx";
+import Button from "./Components/Button.jsx";
+import Screen from "./Components/Screen.jsx";
+import "./App.css";
 
 function App() {
   return (
@@ -16,14 +19,7 @@ function App() {
             </div>
           }
         ></Route>
-        <Route
-          path="/calculator"
-          element={
-            <div>
-              <CalculatorComponent />
-            </div>
-          }
-        ></Route>
+        <Route path="/calculator" element={<CalculatorComponent />}></Route>
       </Routes>
     </div>
   );
